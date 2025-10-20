@@ -1,0 +1,76 @@
+/* Estilo por defecto (pantallas grandes) */
+.custom-header .container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Cuando la pantalla es pequeña */
+@media (max-width: 768px) {
+  .custom-header .container {
+    flex-direction: column;  /* Coloca los elementos uno debajo del otro */
+    text-align: center;      /* Centra el contenido */
+  }
+
+  .custom-header .container > .d-flex {
+    justify-content: center; /* Centrar los logos */
+    margin-bottom: 1rem;     /* Espacio debajo de los logos */
+  }
+
+  .custom-header .text-end {
+    text-align: center !important; /* El texto queda centrado debajo de las imágenes */
+  }
+}
+
+:root{
+  --brand-blue: #1e3a8a; /* azul */
+  --brand-green: #059669; /* verde */
+  --brand-gray: #6b7280; /* gris */
+  --brand-gradient: linear-gradient(90deg, var(--brand-blue), var(--brand-green));
+}
+body { 
+    margin-top: 10px; /* espacio entre header y contenido */
+  margin: 0; /* eliminamos márgenes por defecto */
+  padding: 0; 
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif; 
+
+}
+.logo { height: 52px; width: auto; }
+.logo2 {
+  height: 70px;
+  width: auto;
+  mix-blend-mode: multiply; /* o 'overlay' según el efecto que quieras */
+}
+
+.hero {
+  background: radial-gradient(1200px 500px at 10% 20%, rgba(14,165,233,.12), transparent),
+              radial-gradient(1200px 500px at 90% 10%, rgba(34,197,94,.12), transparent);
+  border-radius: 1.5rem;
+}
+.card-elevated{
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,.06);
+}
+.badge-pill{
+  border-radius: 999px;
+  background: var(--brand-blue);
+}
+footer { position: relative; z-index: 10; }
+.nav-link.active { font-weight: 700; }
+
+p {
+  font-family: "Georgia", "Times New Roman", serif; /* Tipografía elegante */
+  font-size: 20px;
+  line-height: 1.6;          /* Mejor legibilidad */
+  text-align: justify;       /* Márgenes justificados */
+  color: #333;               /* Gris oscuro para suavizar la lectura */
+}
+
+.logo2 {
+  height: 70px;
+  width: auto;
+  mix-blend-mode: multiply; /* o 'overlay' según el efecto que quieras */
+}
+
+/* Espacio entre el header y el contenido */
+

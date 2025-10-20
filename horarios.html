@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Horarios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Forzar que los íconos de control se vean en fondo oscuro/claro */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0,0,0,0.5); /* Fondo semitransparente */
+      border-radius: 50%;
+      background-size: 60% 60%;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+<br>
+<br>
+<br>
+<br>
+<!-- HEADER dinámico -->
+  <div id="header"></div>
+
+<main class="py-5 mt-5">
+  <div class="container mx-auto" style="max-width: 1000px;">
+    <h1 class="mb-4">Horarios de estudiantes</h1>
+
+    <div id="carouselHorarios" class="carousel slide position-relative" data-bs-ride="carousel" style="max-height: 75vh;">
+      
+      <!-- Opcional: indicadores (muchos puntos si quieres TODOS) -->
+      <!-- Si quieres todos, debes poner tantos botones como imágenes -->
+      <!-- Yo aquí lo dejo comentado porque son muchísimas -->
+      <!--
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHorarios" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselHorarios" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselHorarios" data-bs-slide-to="2"></button>
+        ...
+      </div>
+      -->
+
+      <div class="carousel-inner rounded-4 shadow">
+        <!-- IMPORTANTE: primera imagen debe tener "active" -->
+        <div class="carousel-item active">
+          <img src="horario/7_1.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/7_2.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="horario/7_3.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/7_4.jpg" class="d-block w-100"  style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/8_1.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/8_2.jpg" class="d-block w-100"  style="max-height: 75vh; object-fit: contain;">
+        </div> 
+
+        <div class="carousel-item">
+          <img src="horario/8_3.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/8_4.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div> 
+
+        <div class="carousel-item">
+          <img src="horario/9_1.jpg" class="d-block w-100"  style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/9_2.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div> 
+
+        <div class="carousel-item">
+          <img src="horario/9_3.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="horario/9_4.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="horario/10_1.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/10_2.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div> 
+
+        <div class="carousel-item">
+          <img src="horario/10_3.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/10_4.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div> 
+
+        <div class="carousel-item">
+          <img src="horario/11_1.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/11_2.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div> 
+
+        <div class="carousel-item">
+          <img src="horario/11_3.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/11_4.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div> 
+
+        <div class="carousel-item">
+          <img src="horario/grupo_a.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="horario/grupo_b.jpg" class="d-block w-100" style="max-height: 75vh; object-fit: contain;">
+        </div> 
+      </div>
+
+      <!-- Botones visibles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHorarios" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHorarios" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER dinámico -->
+<div id="footer"></div>
+
+<script>
+  async function cargarContenido(id, file) {
+    const respuesta = await fetch(file);
+    const texto = await respuesta.text();
+    document.getElementById(id).innerHTML = texto;
+  }
+  cargarContenido("header", "header.html");
+  cargarContenido("footer", "footer.html");
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

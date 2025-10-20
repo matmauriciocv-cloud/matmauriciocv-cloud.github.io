@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Historia del Liceo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-light">
+<br>
+<br>
+<br>
+<br>
+<!-- HEADER dinámico -->
+  <div id="header"></div>
+
+<main class="py-5 mt-5">
+  <article class="mx-auto" style="max-width: 900px;">
+  <h1 class="mb-4">Historia del Liceo</h1>
+  <p class="mb-4">
+    El Liceo nació del empeño comunitario por ofrecer educación secundaria 
+    en Zarcero. En 1967 se conformó el Comité Pro Colegio impulsado por 
+    vecinos como Gillio Francesa y otras figuras locales. 
+    En enero de 1968, mediante el Decreto N.° 4037, se fundó el Colegio 
+    de Zarcero, originalmente con alineación agropecuaria pero operando 
+    en la práctica como académico. Inició lecciones en 1969 en la Escuela 
+    Otilio Ulate Blanco y en 1972 se concluyó la infraestructura propia. 
+    En 1974 pasó formalmente a la modalidad académica. En 1977 la institución, 
+    con apoyo gubernamental y comunal, adquirió una finca, inauguró laboratorio 
+    de ciencias, taller de artes industriales y gimnasio, consolidándose 
+    como orgullo del cantón por sus logros académicos, culturales y deportivos.
+</p>
+<br>
+  <p class="mb-4">El Liceo nació con la vocación de servir a su comunidad, abriendo sus 
+    puertas a generaciones de estudiantes que han confiado en su excelencia 
+    académica y humana. A lo largo de los años, hemos consolidado proyectos, 
+    talleres y actividades que fortalecen el aprendizaje integral.</p>
+  <p class="mb-4">Hoy seguimos creciendo, adaptándonos a los retos del contexto actual y 
+    proyectándonos hacia el futuro con innovación y sentido de pertenencia.</p>
+    <br>
+<h1 class="mb-4">Datos Relevantes</h1><br>
+<p><b>Servicios e instalaciones:</b></p>
+<p>Biblioteca, laboratorio de cómputo, comedor estudiantil, transporte, gimnasio;
+   oferta de Tercer Ciclo y Diversificada Vocacional.</p>
+<br>
+<p><b>Infraestructura reciente:</b></p>
+<p>Remodelación 2015–2016 para mejorar condiciones de estudiantes y personal.</p>
+<br>
+<p><b>Oferta académica y programas:</b></p>
+<p>Idiomas inglés y francés; énfasis tecnológicos (p. ej., Inglés conversacional, Contabilidad, Diseño Gráfico, Turismo, Informática); 
+  mención de programas como Empresas Labor@ (en la institución). </p>
+<br>
+<p><b>Vida estudiantil:</b></p> 
+<p>Sede y participante de actividades como Ferias de Ciencia y Tecnología y participación 
+  en el Festival Estudiantil de las Artes, juegos estudiantiles deportivos,a nivel circuital</p>
+</article>
+
+</main>
+
+<!-- FOOTER dinámico -->
+  <div id="footer"></div>
+
+<script>
+  async function cargarContenido() {
+    const respuesta = await fetch("header.html"); // archivo externo
+    const texto = await respuesta.text();
+    document.getElementById("header").innerHTML = texto;
+  }
+  cargarContenido();
+</script>
+
+<script>
+  async function cargarContenido2() {
+    const respuesta = await fetch("footer.html"); // archivo externo
+    const texto = await respuesta.text();
+    document.getElementById("footer").innerHTML = texto;
+  }
+  cargarContenido2();
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
