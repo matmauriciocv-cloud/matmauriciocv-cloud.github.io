@@ -22,10 +22,6 @@ Este repositorio contiene información general que permitirá mantener informado
 | Integraciones | Google API, WhatsApp Web |
 | Servidor local | XAMPP / WAMP |
 
----
-
-## 🌐 Sitio de demostración
-🔗 [Ver plataforma en línea](https://github.com/matmauriciocv-cloud/liceo_de_alfaro_ruiz.github.io/índice.html)  
 
 ---
 
