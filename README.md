@@ -1,6 +1,5 @@
 # 🏫 Liceo de Alfaro Ruiz – Plataforma de Gestión Académica
 
-![Encabezado del Liceo de Alfaro Ruiz](https://github.com/matmauriciocv-loud/liceo_de_alfaro_ruiz.github.io/encabezado_lar.jpg)
 
 ## 📘 Descripción General
 El **Liceo de Alfaro Ruiz (LAR)** es una institución educativa pública de Costa Rica comprometida con la **excelencia académica, la disciplina, el respeto y la innovación tecnológica**.  
