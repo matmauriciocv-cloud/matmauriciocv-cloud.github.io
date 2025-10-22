@@ -25,7 +25,7 @@ Este repositorio contiene información general que permitirá mantener informado
 ---
 
 ## 🌐 Sitio de demostración
-🔗 [Ver plataforma en línea](liceo_de_alfaro_ruiz.github.io/indice.html)  
+🔗 [Ver plataforma en línea](liceo_de_alfaro_ruiz.github.io/índice.html)  
 
 ---
 
